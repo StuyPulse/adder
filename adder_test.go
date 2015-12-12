@@ -50,3 +50,7 @@ func TestAdd(t *testing.T) {
 		}
 	}
 }
+
+func TestFake(t *testing.T) {
+	t.Fail()
+}
