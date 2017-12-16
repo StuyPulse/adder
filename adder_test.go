@@ -27,28 +27,28 @@ func TestAdd(t *testing.T) {
 	}
 }
 
-// func TestMultiply(t *testing.T) {
-// 	tests := []struct {
-// 		n1   int
-// 		n2   int
-// 		want int
-// 	}{
-// 		{n1: 0, n2: 0, want: 0},
-// 		{n1: 1, n2: 0, want: 0},
-// 		{n1: -1, n2: 0, want: 0},
-// 		{n1: 3, n2: -3, want: -9},
-// 		{n1: 5, n2: 16, want: 80},
-// 		{n1: 694, n2: 1, want: 694},
-// 	}
+func TestMultiply(t *testing.T) {
+	tests := []struct {
+		n1   int
+		n2   int
+		want int
+	}{
+		{n1: 0, n2: 0, want: 0},
+		{n1: 1, n2: 0, want: 0},
+		{n1: -1, n2: 0, want: 0},
+		{n1: 3, n2: -3, want: -9},
+		{n1: 5, n2: 16, want: 80},
+		{n1: 694, n2: 1, want: 694},
+	}
 
-// 	for i, tt := range tests {
-// 		t.Logf("[%02d] test %d * %d", i, tt.n1, tt.n2)
-// 		product := Multiply(tt.n1, tt.n2)
-// 		if product != tt.want {
-// 			t.Errorf("unexpected value:\n- want: %v\n- got: %v", tt.want, product)
-// 		}
-// 	}
-// }
+	for i, tt := range tests {
+		t.Logf("[%02d] test %d * %d", i, tt.n1, tt.n2)
+		product := Multiply(tt.n1, tt.n2)
+		if product != tt.want {
+			t.Errorf("unexpected value:\n- want: %v\n- got: %v", tt.want, product)
+		}
+	}
+}
 
 // func TestDivide(t *testing.T) {
 // 	tests := []struct {
